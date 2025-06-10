@@ -1,0 +1,12 @@
+#!/binbash
+
+echo "enter your name:" name
+read $name
+echo "enter your email:" email
+read $email
+echo "enter your phone number:" phno
+read phno
+
+echo "your name is:" $name
+echo "your emil is:" $email
+echo "your phone nber is:" $phno
