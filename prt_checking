@@ -1,0 +1,34 @@
+how tocheck if a specific port is open on remote host
+
+check in three ways
+--------------------
+telnet
+netcat 
+nmap
+
+if three commands not avaliable in your remote host. just install the commannds
+yum install telnet -y
+yum install nc -y
+yum install nmap -y
+
+
+how to check ports
+-------------------
+telnet
+------
+telnet <hostname/ip address> port number
+telnet google.com 443
+
+
+netcat
+------
+nc -zv <hostname/ip address> port number
+nc -zv google.com 80
+
+
+nmap
+----
+nmap -p <port number> <hostname/ip address>
+nmap -p 80 google.com
+
+
